@@ -1,0 +1,657 @@
+/**
+* 2007-2025 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PrestaShop SA <contact@prestashop.com>
+*  @copyright 2007-2025 PrestaShop SA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*
+* Don't forget to prefix your containers with your own identifier
+* to avoid any conflicts with others containers.
+*/
+
+
+.head-tabs {
+    /*    margin: 10px 0;*/
+    /*background-color: #f9f9f9;*/
+    padding-bottom: 22px;
+    /*padding-left: 10px;*/
+    /*padding-right: 10px;*/
+    /*    padding-top: 10px;*/
+    border-radius: 5px;
+}
+
+/* Tab navigation */
+.nav {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    gap: 20px;
+    /* Space between the tabs */
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .2);
+}
+
+/* Active Tab */
+.nav li.active a {
+    background-color: #ebebeb !important;
+    /*color: white;*/
+    cursor: pointer;
+    background: #ebebeb;
+    color: #1d1d1d !important;
+    border-left: 5px solid #1d1d1d !important;
+    border-color: transparent;
+    /*border-radius: 4px;*/
+}
+
+.tvadmintab-product-tab a,
+.tvadmintab-product-active a {
+    border-left: 5px solid transparent;   
+}
+
+.tvadmintab-product-tab a:hover,
+.tvadmintab-product-active:hover a {
+    cursor: pointer;
+    background-color: #ebebeb !important;
+    color: #1d1d1d !important;
+    border-left: 5px solid #1d1d1d;
+    border-radius: 4px;
+}
+
+
+
+/* Hover effect for tabs */
+.nav a:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Style for the tab panes */
+.tab-pane {
+    display: none;
+}
+
+/* Show active tab content */
+.tab-pane.active {
+    display: block;
+}
+
+li.active.tv_first_tab {
+    top: 0px;
+}
+
+li.tv_second_tab {
+    top: 5px;
+    margin-bottom: 6px;
+}
+
+li.tv_third_tab {
+    top: 10px;
+}
+
+.label-tooltip .icon-question-sign {
+    font-size: 17px;
+}
+
+.ui-tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.ui-tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 0;
+
+    /* Position the ui-tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 20%;
+    margin-left: -60px;
+}
+
+.ui-tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* edit delet button css code */
+.btn-group-action.pull-right {
+    display: flex;
+    gap: 9px;
+    padding: 6px;
+    justify-content: center;
+    float: none !important;
+}
+
+/* button css code */
+
+
+.bootstrap .btn-success {
+    color: #fff !important;
+    background-color: #72c279 !important;
+    border-color: #60ba68 !important;
+}
+
+.bootstrap .btn-danger {
+    color: #fff !important;
+    background-color: #e08f95 !important;
+    border-color: #da7b82 !important;
+}
+
+/* Center align the modal header close button */
+.modal-header .close {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+/* Add padding and alignment for modal content */
+.modal-body {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Customize modal appearance */
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Button customization */
+#openModal {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.tv-tab-form-data #form3 .modal-dialog {
+    max-width: 900px;
+    width: auto;
+}
+
+body:not(.ps-bo-rebrand) #main {
+    background-color: #eff1f2;
+}
+
+body:not(.ps-bo-rebrand) .bootstrap .nav a {
+    color: var(--edition-black-default);
+    border-left: 5px solid #fff;
+    background-color: #fff;
+    border-left: 5px solid #fff;
+    font-size: 14px;
+    border-radius: 2px;
+    font-weight: 500;
+}
+
+body:not(.ps-bo-rebrand) .bootstrap .nav a:hover {
+    background: #dff3f8;
+    color: #0092c8 !important;
+    border-left: 5px solid #4ac7e0 !important;
+    border-color: transparent;
+}
+
+body:not(.ps-bo-rebrand) .head-tabs .bootstrap a:hover {
+    ackground-color: #dff3f8 !important;
+    /* color: white; */
+    cursor: pointer;
+    background: #dff3f8;
+    color: #0092c8 !important;
+    border-left: 5px solid #4ac7e0 !important;
+    border-color: transparent;
+}
+
+.bootstrap .nav>li>a {
+    padding: 10px 15px;
+}
+
+.col-md-10.tv-tab-form-data {
+    padding-right: 10px !important;
+    padding-left: 0px !important;
+}
+
+/*:is(body:not(.ps-bo-rebrand)):is(body:not(.no-smb-reskin)) .panel,
+/*:is(body:not(.ps-bo-rebrand)):is(body:not(.no-smb-reskin)) .panel-heading {
+    border: none !important;
+}*/
+*/@media (min-width: 992px) {
+    .custom-tab .col-md-2 {
+        width: 15%;
+    }
+}
+
+.view-post-cell a {
+    text-decoration: underline;
+    /* Adds underline to the link */
+    color: #0092c8 !important;
+    font-weight: 500;
+    cursor: pointer;
+    /* Changes the cursor to a pointer when hovering */
+    background: unset !important;
+}
+
+.tv_second_tab img,
+.tvadmintab-product-tab img {
+    margin-left: -5px;
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+}
+
+.tvcms-promo-banner img {
+    max-width: 100%;
+}
+
+@media (max-width: 991px) {
+    #searchInput {
+        margin-bottom: 10px !important;
+    }
+
+    /* .tvcms-promo-banner {
+        margin-top: 18px !important;
+    }*/
+}
+
+@media(min-width: 575px) and (max-width: 991px) {
+    .tvcms-promo-banner {
+        margin-top: 18px !important;
+    }
+}
+
+/*@media (max-width: 768px) {
+    #content.bootstrap .panel {
+        padding: 0;
+    }
+}*/
+
+@media (max-width: 575px) {
+    .tvcms-promo-banner img {
+        margin-bottom: 5px;
+    }
+
+    .bootstrap .nav>li>a {
+        padding: 9px 15px;
+    }
+
+    .bootstrap .page-head .toolbarBox .btn-toolbar .toolbar_btn {
+        padding: 8px 9px;
+    }
+
+    body.mobile #content.bootstrap .page-head h2.page-title {
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 485px) {
+    #regeneratetvgoogleabussinessreviewsToken {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    #searchInput {
+        width: 30% !important;
+    }
+
+}
+
+/*@media (max-width: 369px) {
+    .tvcms-promo-banner img {
+        margin-top: 108px !important;
+    }
+}*/
+
+.bootstrap .form-horizontal .form-wrapper {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 83.33333%;
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+    padding: 0 !important;
+    margin: inherit !important;
+}
+
+.bootstrap .table tbody>tr>td {
+    padding: 10px 7px !important;
+}
+
+i.icon-check {
+    color: #fff !important;
+}
+
+i.icon-remove {
+    color: #fff !important;
+}
+
+
+
+#useCurrentLocation {
+    justify-content: center;
+    padding: 11px 10px;
+    margin-top: 8px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(45deg, #007BFF, #0056D2);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.4s, box-shadow 0.3s;
+    text-transform: uppercase;
+}
+
+#useCurrentLocation i {
+    font-size: 18px;
+    /* Adjust icon size */
+}
+
+#useCurrentLocation:hover {
+    background-color: none !important;
+}
+
+#useCurrentLocation:hover {
+    background: linear-gradient(45deg, #0056D2, #007BFF);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+#useCurrentLocation:focus {
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.8);
+    /* Focus effect */
+}
+
+
+/* Button Styles */
+#map {
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    line-height: 1.5;
+    text-decoration: none;
+    margin-top: 9px;
+    margin-left: 9px;
+    color: #ffff !important;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #007BFF, #0056D2);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    text-transform: uppercase;
+}
+
+#map i {
+    font-size: 21px;
+    transition: transform 0.3s ease;
+}
+
+#map:hover {
+    background: linear-gradient(45deg, #0056D2, #007BFF);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Small Button Styles */
+#map.btn-sm {
+    padding: 10px 14px 10px 10px;
+    font-size: 13px;
+}
+
+/* Hover and Focus States */
+
+
+/* Focus State for Accessibility */
+#map:focus {
+    outline: 2px solid #0056b3;
+}
+
+
+select#TVGOOGLEABUSSINESSREVIEWS_EMAILS_ORDER_STATUS_FOR_TRIGGERING {
+    width: 218px !important;
+}
+
+.googleform_1 #free,
+.googleform_1 #paid {
+    width: 19px;
+    height: 19px;
+    accent-color: #1d1d1d;
+}
+
+.googleform_1 .radio label {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    column-gap: 5px;
+    line-height: 7px;
+}
+
+.googleform_1 .radio {
+    display: inline-block;
+    margin-inline-end: 15px;
+    padding-top: 4px !important;
+}
+
+/*cronjob css start*/
+.cronjob_wrapper .alert.alert-info {
+    padding: 16px 15px 16px 56px;
+    border-radius: 5px;
+    background: #0000000a;
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+    font-family: Arial, sans-serif;
+    border: 1px solid#e4e4e4;
+}
+
+.cronjob_wrapper .cronjob_heading {
+    color: #333;
+    line-height: 1.6;
+}
+
+.cronjob_wrapper .label.label-default {
+    background-color: #000;
+    color: white;
+    padding: 12px 10px 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-inline-end: 5px;
+    letter-spacing: 0.3px;
+    line-height: normal;
+    height: 39px;
+}
+
+.cronjob_wrapper .cronjob_code {
+    padding: 11px 10px 10px;
+    /* margin-top: 10px; */
+    background: rgba(0, 0, 0, .10);
+    color: #000;
+    border-radius: 4px;
+    font-family: "Courier New", Courier, monospace;
+    overflow-x: auto;
+    font-weight: 700;
+}
+
+.cronjob_wrapper span.icon-arrows-v {
+    font-size: 1.2em;
+    color: #000;
+    vertical-align: middle;
+}
+
+.cronjob_wrapper #tv_execute_cron_task,
+.cronjob_wrapper #regeneratetvgoogleabussinessreviewsToken {
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-size: 1em;
+    text-transform: capitalize;
+     background-color: rgba(0, 0, 0, .9);
+    border-color: #000;
+    letter-spacing: .6px;
+    font-family: 'Open Sans';
+}
+
+.cronjobs_options {
+    margin: 13px 0 20px;
+}
+
+.cronjobs {
+    display: inline-flex;
+    flex-wrap: wrap;
+    row-gap: 3px;
+}
+.cronjob_wrapper .alert-info hr {
+    border-top-color: #e4e4e4;
+}
+#regeneratetvgooglebusinessreviewsToken {
+    font-weight: 700;
+    padding: 8px 16px;
+    letter-spacing: .6px;
+    background-color: rgba(0, 0, 0, .9);
+    border-color: #000;
+    text-transform: none !important;
+    border-radius: 3px;
+}
+
+#regeneratetvgooglebusinessreviewsToken i {
+        margin-inline-end: 4px;
+        font-size: 20px;
+}
+.cronjob_wrapper .alert.alert-info::before {
+    color: #000;
+    left: 20px;
+    top: 15px;
+}
+#tv_execute_cron_task i {
+    font-size: 18px;
+    margin-inline-end: 5px;
+}
+/*cronjob css end*/
+
+/*xxx*/
+
+/*#module_form .panel-heading,*/
+.tvgooglebusinessreviews-wrapper .panel-heading {
+    padding: 10px !important;
+    background-color: #ffffff !important;
+    border-top: 2px solid #1d1d1d !important;
+    font-size: 17px !important;
+    border-radius: 4px 4px 0 0 !important;
+    margin: -20px -20px 15px !important;
+    position: relative !important;
+    width: auto !important;
+    border-bottom: 1px solid #e4e4e4 !important;
+    margin-bottom: 15px;
+}
+
+/*#module_form .panel-footer,*/
+.tvgooglebusinessreviews-wrapper .panel-footer {
+    margin: 15px -20px -20px;
+    padding: 10px;
+}
+
+/*#module_form .panel-footer i,*/
+.tvgooglebusinessreviews-wrapper .panel-footer button i {
+    display: none;
+}
+
+#module_form .panel-footer a {
+    border-radius: 4px;
+}
+
+.tvgooglebusinessreviews-wrapper .panel {
+    padding: 20px 20px 10px !important;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/*#module_form .help-block,*/
+.tvgooglebusinessreviews-wrapper .help-block {
+    font-size: 12px;
+}
+
+.bootstrap .tvgooglebusinessreviews-wrapper .panel-footer .btn {
+  border-radius: 4px;
+}
+
+.cronjob_wrapper #tv_execute_cron_task:hover,
+#regeneratetvgooglebusinessreviewsToken:hover,
+.bootstrap .tvgooglebusinessreviews-wrapper .panel-footer .btn:hover {
+    opacity: .8;
+}
+
+.bootstrap .tvgooglebusinessreviews-wrapper .panel-footer .btn.pull-right {
+    background-color: #1d1d1d;
+    color: #fff;
+}
+
+.google-badge-clr .mColorPickerInput+.input-group-addon {
+    border-radius: 0 4px 4px 0;
+} 
+
+.bootstrap .tvgooglebusinessreviews-wrapper .form-group .translatable-field .btn.dropdown-toggle,
+.bootstrap .form-control,
+.bootstrap input[type=number],
+.bootstrap input[type=password],
+.bootstrap input[type=search],
+.bootstrap input[type=text],
+.bootstrap select,
+.bootstrap textarea #module_form .panel {
+    border-radius: 4px;
+}
+
+.bootstrap .form-control:focus,
+.bootstrap input[type=number]:focus,
+.bootstrap input[type=password]:focus,
+.bootstrap input[type=search]:focus,
+.bootstrap input[type=text]:focus,
+.bootstrap select:focus {
+    outline: unset !important;
+}
+/*xx*/

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{shop_name} - Login Information</title>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #ffffff;
+        font-family: Arial, sans-serif;
+        color: #333333;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .mail-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0;
+        margin-top: 80px;
+    }
+
+    .mail-container .mail-header-body-wrapper {
+        background-color: #ffffff;
+        box-shadow: 0 0px 17px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        padding: 20px 30px;
+
+    }
+
+    .review_btn,
+    .customer-name-wrapper {
+        text-align: center;
+    }
+
+    .customer-name-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .mail-body .mail-body-txt {
+        font-family: Open sans, arial, sans-serif;
+        font-size: 14px;
+        line-height: 25px;
+        text-align: left;
+        color: #363A41;
+        font-weight: 600;
+    }
+
+    .mail-body .reminder_special {
+        font-size: 15px;
+    }
+
+    .mail-body .review_btn {
+        margin-top: 20px;
+    }
+
+    .mail-header {
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .mail-header img {
+        max-width: 200px;
+        height: auto;
+    }
+
+    .mail-body {
+        padding: 30px 0px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .customer-name-wrapper h1 {
+        margin: 0 0 20px;
+        position: relative;
+        font-family: Open sans, arial, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: center;
+        color: #363A41;
+        position: relative;
+    }
+
+    .customer-name-wrapper h1::before {
+        content: "";
+        position: absolute;
+        width: 30%;
+        height: 1px;
+        background-color: #dbd4d4;
+        bottom: -13px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .customer-name-wrapper span {
+        font-family: Open sans, arial, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 25px;
+        text-align: center;
+        color: #363A41;
+    }
+
+    .mail-body .review_btn a {
+        background-color: #337ff1;
+        color: #fff;
+        text-decoration: none;
+        padding: 11px 20px;
+        border-radius: 23px;
+        display: inline-block;
+        letter-spacing: .5px;
+        transition: .4s ease;
+        font-size: 14px;
+    }
+
+    .mail-body .review_btn a:hover {
+        background-color: #337ff1c4;
+    }
+
+    .mail-body-content-btn-wrapper {
+        background-color: #e7e7e785;
+        padding: 20px 20px;
+        font-weight: 600;
+        border-radius: 7px;
+        margin-bottom: 25px;
+    }
+
+    .mail-body p {
+        margin: 0 0 15px;
+    }
+
+    .mail-footer {
+        padding: 25px 40px;
+        font-size: 13px;
+        text-align: center;
+        color: #888888;
+    }
+
+    .mail-footer a {
+        color: #317299;
+        text-decoration: none;
+    }
+
+    .mail-footer .shop-name {
+        text-decoration: underline;
+        color: #656565;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        display: inline-block;
+    }
+
+    .mail-footer .powerd-by-wrapper a {
+        text-decoration: underline;
+        color: #656565;
+        font-weight: 400;
+    }
+
+    @media screen and (max-width: 600px) {
+
+        .mail-body,
+        .mail-footer {
+            padding: 20px 20px 0;
+        }
+
+        .mail-body h1 {
+            font-size: 17px;
+        }
+
+        .mail-container .mail-header-body-wrapper {
+            padding: 20px 0px;
+        }
+
+        .mail-container {
+            margin-top: 20px;
+        }
+
+        .customer-name-wrapper {
+            margin-bottom: 25px;
+        }
+
+        .mail-header {
+            padding: 10px 10px;
+        }
+
+        .mail-body .review_btn a {
+            font-size: 13px;
+            padding: 10px 17px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="mail-container">
+        <div class="mail-header-body-wrapper">
+            <div class="mail-header">
+                <a href="{shop_url}" target="_blank">
+                    <img height="auto" src="{shop_logo}" alt="{shop_name}">
+                </a>
+            </div>
+            <div class="mail-body">
+                <div class="customer-name-wrapper">
+                    <h1>Hi {firstname} {lastname},</h1>
+                    <span>Your opinion matters!</span>
+                </div>
+                <div class="mail-body-content-btn-wrapper">
+                    <div class="mail-body-content">
+                        <p class="mail-body-txt">You recently placed the order with <span class="reminder_special">{reference} {date_add} on {shop_name}</span> and we thank you for your confidence.</p>
+                        <p class="mail-body-txt">
+                            In order to listen to you even more, we would be delighted to hear your impressions and reviews by clicking on the following link:
+                        </p>
+                    </div>
+                    <div class="review_btn"><a href="https://search.google.com/local/writereview?placeid={google_place_id}">WRITE A REVIEW</a>
+                    </div>
+                </div>
+                <div class="wishes_content">
+                    <p class="mail-body-txt">Your experience is precious, share it!</p>
+                    <p class="mail-body-txt">Thank you for your contribution and see you soon at <span class="shop_name">{shop_name}.</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="mail-footer">
+            <a href="{shop_url}" class="shop-name">{shop_name}</a>
+            <div class="powerd-by-wrapper"> Powered by <a href="https://www.prestashop.com/?utm_source=marchandprestashop&amp;utm_medium=e-mail=utm_campaign=footer_1-7">PrestaShop</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

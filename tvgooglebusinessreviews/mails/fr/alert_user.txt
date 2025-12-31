@@ -1,0 +1,17 @@
+{shop_url}
+
+Hi {firstname} {lastname},
+
+Your opinion matters!
+
+You recently placed the order with {reference} {date_add} on {shop_name} and we thank you for your confidence.
+
+In order to listen to you even more, we would be delighted to hear your impressions and reviews by clicking on the following link: [WRITE A REVIEW](https://search.google.com/local/writereview?placeid={google_place_id}).
+
+Your experience is precious, share it!
+
+Thank you for your contribution and see you soon at {shop_name}.
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail=utm_campaign=footer_1-7)
